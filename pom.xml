@@ -45,7 +45,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
     <scm>
-        <developerConnection>scm:git:https://${guname}:${gpass}@github.com/sky-kshatriyan/sdcms</developerConnection>
+        <developerConnection>scm:git:https://${guname}:${gpass}@github.com/sky-kshatriyan/sdscm</developerConnection>
         <tag>HEAD</tag>
     </scm>
     <build>
