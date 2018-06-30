@@ -19,7 +19,7 @@
     <groupId>com.skydevops.sdcms</groupId>
     <artifactId>sdcms</artifactId>
     <packaging>pom</packaging>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
     <description>sdcms</description>
 
     <modules>
@@ -46,7 +46,7 @@
     </properties>
     <scm>
         <developerConnection>scm:git:git@github.com:sky-kshatriyan/sdscm.git</developerConnection>
-        <tag>sdcms-1.0</tag>
+        <tag>HEAD</tag>
     </scm>
     <build>
         <plugins>
