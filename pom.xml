@@ -63,6 +63,8 @@
                     <preparationGoals>clean install</preparationGoals>
                     <goals>install</goals>
                     <releaseProfiles>release</releaseProfiles>
+                    <localCheckout>true</localCheckout>
+                    <pushChanges>false</pushChanges>
                 </configuration>
             </plugin>
             <!-- Maven Source Plugin -->
