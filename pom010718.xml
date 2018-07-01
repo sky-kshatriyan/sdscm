@@ -16,11 +16,11 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.kkpvt.kkaem</groupId>
-    <artifactId>kkaem</artifactId>
+    <groupId>com.skydevops.sdcms</groupId>
+    <artifactId>sdcms</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <description>kkaem</description>
+    <version>1.1-SNAPSHOT</version>
+    <description>sdcms</description>
 
     <modules>
         <module>core</module>
@@ -31,32 +31,39 @@
     </modules>
 
     <properties>
-        <aem.host>${env.CQ_HOST}</aem.host>
-        <aem.port>${env.CQ_PORT}</aem.port>
-        <aem.publish.host>${env.CQ_PUB_HOST}</aem.publish.host>
-        <aem.publish.port>${env.CQ_PUB_PORT}</aem.publish.port>
-        <sling.user>${env.CQ_USER}</sling.user>
-        <sling.password>${env.CQ_PASS}</sling.password>
-        <vault.user>${env.CQ_USER}</vault.user>
-        <vault.password>${env.CQ_PASS}</vault.password>
-
+        <aem.host>localhost</aem.host>
+        <aem.port>4502</aem.port>
+        <aem.publish.host>localhost</aem.publish.host>
+        <aem.publish.port>4503</aem.publish.port>
+        <sling.user>admin</sling.user>
+        <sling.password>admin</sling.password>
+        <vault.user>admin</vault.user>
+        <vault.password>admin</vault.password>
+        <guname>sky-kshatriyan</guname>
+        <gpass>Sarah143*</gpass>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
-
+    <scm>
+        <developerConnection>scm:git:git@github.com:sky-kshatriyan/sdscm.git</developerConnection>
+        <!-- <tag>HEAD</tag> -->
+            <connection>scm:git:git@github.com:sky-kshatriyan/sdscm.git</connection>
+            <url>https://github.com/sky-kshatriyan/sdscm</url>
+            <tag>HEAD</tag>
+    </scm>
     <build>
         <plugins>
             <!-- Maven Release Plugin -->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.5.3</version>
-                <configuration>
-                    <scmCommentPrefix>[maven-scm] :</scmCommentPrefix>
-                    <preparationGoals>clean install</preparationGoals>
-                    <goals>install</goals>
-                    <releaseProfiles>release</releaseProfiles>
-                </configuration>
+               <artifactId>maven-release-plugin</artifactId>
+               <version>2.5.3</version>
+               <dependencies>
+                  <dependency>
+                     <groupId>org.apache.maven.scm</groupId>
+                     <artifactId>maven-scm-provider-gitexe</artifactId>
+                     <version>1.9.5</version>
+                  </dependency>
+               </dependencies>
             </plugin>
             <!-- Maven Source Plugin -->
             <plugin>
@@ -556,7 +563,7 @@
         <snapshotRepository>
             <id>snapshots</id>
             <name>artpro-snapshots</name>
-            <url>${env.ARTPRO_URL}/libs-snapshot-local</url>
+            <url>http://sdrma.yebbare.com/artifactory/libs-snapshot-local</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
