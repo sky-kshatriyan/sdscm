@@ -550,7 +550,7 @@
         <repository>
             <id>central</id>
             <name>artpro-releases</name>
-            <url>https://sdrma.yebbare.com:80/artifactory/libs-release-local</url>
+            <url>http://sdrma.yebbare.com/artifactory/libs-release-local</url>
         </repository>
     </distributionManagement>
 </project>
