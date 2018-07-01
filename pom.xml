@@ -45,8 +45,11 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
     <scm>
-        <developerConnection>scm:git:git@github.com:sky-kshatriyan/sdscm.git</developerConnection>
-        <tag>HEAD</tag>
+<!--         <developerConnection>scm:git:git@github.com:sky-kshatriyan/sdscm.git</developerConnection>
+        <tag>HEAD</tag> -->
+            <connection>scm:git:git@github.com:sky-kshatriyan/sdscm.git</connection>
+            <url>https://github.com/sky-kshatriyan/sdscm</url>
+            <tag>HEAD</tag>
     </scm>
     <build>
         <plugins>
