@@ -61,11 +61,11 @@
                 <configuration>
                    <checkModificationExcludes>
   	               		<checkModificationExclude>release-pom.xml</checkModificationExclude>
-                   </checkModificationExcludes>
+                   </checkModificationExcludes><!-- 
                     <scmCommentPrefix>[maven-scm] :</scmCommentPrefix>
                     <preparationGoals>clean install</preparationGoals>
                     <goals>install</goals>
-                    <releaseProfiles>release</releaseProfiles>
+                    <releaseProfiles>release</releaseProfiles> -->
                     <localCheckout>true</localCheckout>
                     <pushChanges>false</pushChanges>
                 </configuration>
