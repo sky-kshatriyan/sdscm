@@ -559,5 +559,11 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>artpro-snapshots</name>
+            <url>http://sdrma.yebbare.com/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
