@@ -549,5 +549,10 @@
             <name>artpro-snapshots</name>
             <url>https://sdrma.yebbare.com/artifactory/libs-snapshot-local</url>
         </snapshotRepository>
+        <repository>
+            <id>central</id>
+            <name>artpro-releases</name>
+            <url>https://sdrma.yebbare.com:80/artifactory/libs-release-local</url>
+        </repository>
     </distributionManagement>
 </project>
